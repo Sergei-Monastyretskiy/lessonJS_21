@@ -1,17 +1,61 @@
-# React + Vite
+# LessonJS_21 - React Components Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Опис проекту
 
-Currently, two official plugins are available:
+Цей проект демонструє створення та використання переповнюваних React компонентів з використанням Vite. Проект включає реалізацію компонентів `Button` та `Input` з підтримкою props та обробників подій.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Основні можливості:
+- Компонент `Button` з props: `text`, `type`, `onClick`
+- Компонент `Input` з props: `placeholder`, `type`, `onChange`
+- Демонстрація роботи компонентів у різних сценаріях використання
+- Підтримка різних типів полів вводу (text, password)
+- Робота з формами та обробниками подій
 
-## React Compiler
+## Інструкції зі встановлення та запуску
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Встановлення залежностей:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# lessonJS_21" 
+### Запуск проекту в режимі розробки:
+
+```bash
+npm run dev
+```
+
+Проект буде доступний за адресою: `http://localhost:5173`
+
+### Збірка проекту для продакшену:
+
+```bash
+npm run build
+```
+
+### Попередній перегляд production збірки:
+
+```bash
+npm run preview
+```
+
+## Демо-версія
+
+🚀 [Переглянути демо-версію](https://lesson-js-21.vercel.app/)
+
+## Технології
+
+- React 18
+- Vite
+- ESLint
+
+## Структура проекту
+
+```
+src/
+├── components/
+│   ├── button.jsx    # Компонент кнопки
+│   └── input.jsx     # Компонент поля вводу
+├── App.jsx           # Головний компонент з прикладами використання
+└── main.jsx          # Точка входу додатку
+``` 
